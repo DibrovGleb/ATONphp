@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #ecf0ee;
+    color: #3a3b3a;
+    padding: 50px 10px 0;
+}
+#root{
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max(340px, 25vw);
+    margin: 0 auto;
+    box-shadow: 0 0 3px 1px #3a3b3a7e;
+    border-radius: 5px;
+    font-family: "Montserrat Alternates", sans-serif;
+    padding: 10px;
+}
+.container ul{
+    padding: 10px;
+    list-style: none;
+    box-shadow: 0 0 0px 1px #073ec859;
+    border-radius: 3px;
+}
+.container ul li{
+    margin: 10px 0;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.container h2{
+    font-family: "Exo", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+.container a{
+    margin: 0 0 20px;
+}
+.container form{
+    display: grid;
+    gap: 5px;
+}
+.container form input:not([type="submit"]){
+    font-family: "Montserrat Alternates", sans-serif;
+    outline: 0;
+    padding: 10px;
+    border: 0;
+    box-shadow: 1px 1px 2px 1px #3a3b3a7e;
+    border-radius: 3px;
+}
+.container form input:not([type="submit"]):focus{
+    box-shadow: inset 2px 2px 3px 1px #3a3b3a7e;
+}
+.container form input[type="submit"], .tbl_container button{
+    background: transparent;
+    border: 0;
+    font-family: "Montserrat Alternates", sans-serif;
+    cursor: pointer;
+    transition: color 0.3s ease, background 0.3s ease;
+    box-shadow: 0 0 0px 1px #3b3a3a94;
+    padding: 10px;
+    border-radius: 3px;
+}
+.container form input[type="submit"]:hover, .tbl_container button:hover{
+    background: #073fc8;
+    color: #ecf0ee;;
+
+}
+.tbl_container{ 
+    display: grid;
+    font-family: "Exo", sans-serif;
+    width: -webkit-fill-available;
+    max-height: 1000px;
+    max-width: 1000px;
+    overflow: auto;
+    padding: 0 10px 10px;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 7px 0px #3b3a3a94;
+}
+.tbl_container a{
+    text-align: center;
+    padding: 10px;
+    margin: 5px 0;
+}
+.tbl_container h2{
+    text-align: center;
+    font-weight: 400;
+    margin: 15px 0;
+}
+.tbl_container table{
+    border-radius: 3px;
+}
+.tbl_container td, th{
+    padding: 10px;
+    box-shadow: 0 0 3px 0px #3b3a3a45;
+}
+.tbl_container button{
+    font-family: "Exo", sans-serif;
+    padding: 5px 10px
+}
+.tbl_container form{
+    display:flex;
+    gap:10px;
+}
+
+.message{
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 565px;
+    min-width: 250px;
+    box-shadow: 0 0 5px 2px #3a3b3a7e;
+    border-radius: 5px;
+}
+.message h3{
+    font-family: "Exo", sans-serif;
+    line-height: 180%;
+    font-weight: 400;
+    margin: 0;
+}
+a{
+    color: #71bb00;
+    text-decoration: none;
+    font-weight: 500;
+}
+.message span, .container span{
+    color: #073fc8;
+}
