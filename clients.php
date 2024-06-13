@@ -19,12 +19,12 @@ if ($clients) {
     foreach ($clients as $row) {
         echo "<tr>";
         echo "<td>" . $row['id'] . "</td>";
-        echo "<td>" . $row['account_number'] . "</td>";
+        echo "<td class='acc-num'>" . $row['account_number'] . "</td>";
         echo "<td>" . $row['last_name'] . "</td>";
         echo "<td>" . $row['first_name'] . "</td>";
         echo "<td>" . $row['middle_name'] . "</td>";
         echo "<td>" . $row['inn'] . "</td>";
-        echo '<td><form action="statusupdate.php" method="post">
+        echo '<td><form action="statusupdate.php" method="PUT">
                 <select name="new_status">
                 <option value="" selected disabled hidden>'.$row['status'].'</option>
                 <option value="Не в работе">Не в работе</option>

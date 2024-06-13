@@ -1,6 +1,6 @@
 <?php
-require_once 'config.php';
 session_start();
+require_once 'config.php';
 echo "<link rel='stylesheet' href='style.css'>";
 echo "<title>Изменение статуса</title>";
 $new_status = $_POST['new_status'];

@@ -10,6 +10,7 @@ $stmt->execute();
 
 $clients = $stmt->fetchAll();
 if ($clients) {
+    echo "<a class='btn-link' href='index.php'>Вернуться на главную</a>";
     echo "<div class='tbl_container'><h2>Клиенты</h2>";
     echo "<table>";
     echo "<tr><th>ID</th><th>Номер счета</th><th>Фамилия</th>
@@ -26,7 +27,7 @@ if ($clients) {
         echo '<td>'.$row['status'].'</option></td>';
         echo "</tr>";
     }
-    echo "</table><a href='index.php'>Вернуться на главную</a></div>";
+    echo "</table></div>";
 } else {
     echo '<h2>В базе данных нет клиентов<h2>';
 }

@@ -15,7 +15,7 @@
       <div class="container">
         <? echo "<ul> <li>Имя: <span>" . $_SESSION['fio'] . "</span></li>
       <li>Логин: <span>" . $_SESSION['login'] . "</span></li></ul>"; ?>
-        <a href="allclients.php">Все клиенты</a>
+        <a class='btn-link' href="allclients.php">Все клиенты</a>
         <form action="">
           <input type="submit" value="Выйти" formaction="logout.php">
         </form>

@@ -6,6 +6,8 @@ body{
     box-sizing: border-box;
     background: #ecf0ee;
     color: #3a3b3a;
+    display: grid;
+    justify-items: center;
     padding: 50px 10px 0;
 }
 #root{
@@ -40,9 +42,6 @@ body{
     font-weight: 400;
     margin: 0 0 10px;
 }
-.container a{
-    margin: 0 0 20px;
-}
 .container form{
     display: grid;
     gap: 5px;
@@ -58,7 +57,7 @@ body{
 .container form input:not([type="submit"]):focus{
     box-shadow: inset 2px 2px 3px 1px #3a3b3a7e;
 }
-.container form input[type="submit"], .tbl_container button{
+.container form input[type="submit"], .tbl_container button, .btn-link{
     background: transparent;
     border: 0;
     font-family: "Montserrat Alternates", sans-serif;
@@ -71,7 +70,6 @@ body{
 .container form input[type="submit"]:hover, .tbl_container button:hover{
     background: #073fc8;
     color: #ecf0ee;;
-
 }
 .tbl_container{ 
     display: grid;
@@ -83,11 +81,6 @@ body{
     padding: 0 10px 10px;
     border-radius: 3px;
     box-shadow: inset 0px 0px 7px 0px #3b3a3a94;
-}
-.tbl_container a{
-    text-align: center;
-    padding: 10px;
-    margin: 5px 0;
 }
 .tbl_container h2{
     text-align: center;
@@ -109,10 +102,13 @@ body{
     display:flex;
     gap:10px;
 }
-
+.acc-num{
+    word-break: break-word;
+}
 .message{
     margin: 50px auto;
     padding: 20px;
+    height: fit-content;
     max-width: 565px;
     min-width: 250px;
     box-shadow: 0 0 5px 2px #3a3b3a7e;
@@ -124,10 +120,25 @@ body{
     font-weight: 400;
     margin: 0;
 }
-a{
+.message a{
     color: #71bb00;
     text-decoration: none;
     font-weight: 500;
+}
+.message a:hover{
+    color: #073fc8;
+}
+body a{
+    text-decoration: none;
+}
+.btn-link{
+    margin: 0 0 15px;
+    font-size: 14px;
+    color: inherit;
+}
+.btn-link:hover{
+    background: #073fc8;
+    color: #ecf0ee;
 }
 .message span, .container span{
     color: #073fc8;
