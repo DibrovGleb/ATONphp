@@ -11,7 +11,6 @@ if (isset($_POST['login']) && isset($_POST['password'])) {
     $stmt->bindParam(':login', $login);
     $stmt->bindParam(':password', $password);
     $stmt->execute();
-
     $user = $stmt->fetch();
 
     if ($user) {
